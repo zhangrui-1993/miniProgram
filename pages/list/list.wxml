@@ -1,0 +1,9 @@
+<!--pages/list/list.wxml-->
+<view class="box">
+  <view class="list">
+    <view class="tab" wx:for="{{listData}}"  wx:for-item="item" wx:for-index='ind' wx:key="ind">
+      <view class="title">{{item.title}}</view>
+      <view class="child" wx:for="{{item.child}}" wx:for-item="child" wx:key="index" catchtap="toUrl" data-url='{{child.toUrl}}'>{{child.title}}</view>
+    </view>
+  </view>
+</view>

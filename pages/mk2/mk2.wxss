@@ -1,0 +1,86 @@
+.intro {
+  margin: 30px;
+  text-align: center;
+}
+.normal{
+  line-height: 30px;
+}
+.normal .title{
+  margin-bottom: 10px;
+}
+.showModel{
+  display:block;
+  float: right;
+  padding: 5px;
+  background: #f00;
+}
+/* 规格弹框样式 */
+.pop_wrap{
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  z-index: 99;
+  text-align: center;
+}
+.pop_wrap .mask{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  background: #000;
+  opacity: 0.5;
+}
+.pop_wrap .pop_content{
+  height: 790rpx;
+  background: #fff;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  padding: 0 30rpx 130rpx;
+  text-align: left;
+  border-radius: 24rpx 24rpx 0 0;
+}
+.pop_wrap .pop_content .coupon_box{
+  overflow-y: scroll;
+  height: 760rpx;
+}
+.pop_wrap .pop_title{
+  height: 136rpx;
+  line-height: 136rpx;
+  text-align: center;
+  display: flex;
+}
+.pop_wrap .tit_text{
+  flex: 1;
+  color: #333333;
+  font-size: 30rpx;
+  font-weight: bold;
+}
+.pop_wrap .pop_title .close{
+  width: 40rpx;
+  height: 40rpx;
+  border-radius: 50%;
+  background: #F2F2F2;
+  margin: 44rpx 0;
+  position: relative;
+}
+.pop_wrap .pop_title .close .close_image{
+  position: absolute;
+  width: 20rpx;
+  height: 20rpx;
+  top: 12rpx;
+  left: 12rpx;
+}
+.pop_wrap .sel_type .sel_type_num{
+    font-size: 30rpx;
+    margin-top: 50rpx;
+}
+.coupon_box .child_con{
+  height: 50px;
+  background: #f02311;
+  margin: 5px;
+}
